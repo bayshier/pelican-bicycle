@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>鹈鹕骑自行车 · 9 模型横评</title>
+<title>鹈鹕骑自行车 · 9 个国产模型横评</title>
 <style>
   :root{--bg:#0e1116;--card:#171c24;--line:#262d38;--fg:#e6ebf2;--dim:#8b95a5;--green:#34d399;--blue:#60a5fa;--amber:#fbbf24;--red:#f87171;}
   *{box-sizing:border-box;margin:0;padding:0}
@@ -30,20 +30,10 @@
 </style>
 </head>
 <body>
-<h1>🚲 鹈鹕骑自行车测试 · 9 模型横评</h1>
-<div class="sub">题面：一只骑自行车的鹈鹕（零修饰词） · 赛场：内网 New API 中转站 192.168.1.61:3000 · 2026.09 · 7 交卷 / 2 限流弃考</div>
+<h1>🚲 鹈鹕骑自行车 · 9 个国产模型横评</h1>
+<div class="sub">清一色国产阵容：智谱 GLM · 阿里通义千问 · DeepSeek · 通义万相 · 题面：一只骑自行车的鹈鹕（零修饰词） · 2026.09 · 7 交卷 / 2 限流弃考</div>
 
-<h2>一、文生图组</h2>
-<div class="grid">
-  <div class="card"><h3>qwen-image-2.0-pro<span class="tag t-img">题意天花板</span></h3>
-    <img src="img/qwen-image-2.0-pro.jpg" alt="qwen-image-2.0-pro">
-    <p class="sub">端坐车座、脚踩踏板——还给鹈鹕穿了黑色小皮鞋。</p></div>
-  <div class="card"><h3>wan2.7-image-pro<span class="tag t-img">最美但没骑</span></h3>
-    <img src="img/wan2.7-image-pro.jpg" alt="wan2.7-image-pro">
-    <p class="sub">黄金时刻光影全场第一，但鹈鹕在车架上摆拍，没在骑。</p></div>
-</div>
-
-<h2>二、SVG 组 · 全员动态骑行<span class="tag t-svg">SMIL 动画注入：车轮旋转 · 整车颠簸 · 曲柄蹬踏 · 链条流动</span></h2>
+<h2>一、SVG 组 · 全员动态骑行<span class="tag t-svg">SMIL 动画注入：车轮旋转 · 整车颠簸 · 曲柄蹬踏 · 链条流动</span></h2>
 <div class="grid">
   <div class="card"><h3>qwen3.7-plus<span class="tag t-svg">机械最严谨</span></h3><figure class="fig"><div class="box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
   <!-- Ground -->
@@ -673,7 +663,17 @@
 </div>
 <p class="sub">SVG 组为模型原作 + 注入 SMIL 动画（保持原坐标不动，只加动画元素）；未加动画的原始版本在 git 历史与博客存档中。</p>
 
-<h2>三、特别参展：ZCode 手绘动态版<span class="tag t-spec">评测员下场 · 本页即动画</span></h2>
+<h2>四、文生图组<span class="tag t-img">卷完代码，再卷图片</span></h2>
+<div class="grid">
+  <div class="card"><h3>qwen-image-2.0-pro<span class="tag t-img">题意天花板</span></h3>
+    <img src="img/qwen-image-2.0-pro.jpg" alt="qwen-image-2.0-pro">
+    <p class="sub">端坐车座、脚踩踏板——还给鹈鹕穿了黑色小皮鞋。</p></div>
+  <div class="card"><h3>wan2.7-image-pro<span class="tag t-img">最美但没骑</span></h3>
+    <img src="img/wan2.7-image-pro.jpg" alt="wan2.7-image-pro">
+    <p class="sub">黄金时刻光影全场第一，但鹈鹕在车架上摆拍，没在骑。</p></div>
+</div>
+
+<h2>二、特别参展：ZCode 手绘动态版<span class="tag t-spec">评测员下场 · 本页即动画</span></h2>
 <div class="card"><figure class="fig"><div class="box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="sans-serif">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
@@ -850,21 +850,21 @@
 </div><figcaption>ZCode 手绘动态版 · 评测员下场（本页即是活的动画）</figcaption></figure>
 <p class="sub">纯坐标手绘 + SMIL 原生动画（零 JS）：车轮旋转 · 双腿 180° 相位蹬踏 · 链条双向流动 · 整车颠簸 · 头部点动 · 云朵飘移 · 速度线掠过。</p></div>
 
-<h2>四、弃考席</h2>
+<h2>三、弃考席</h2>
 <div class="card"><h3>glm-5.3 / glm-5.3-flash<span class="tag t-fail">429 弃考</span></h3>
 <p class="sub">全程 429 Too Many Requests，换三把 key 无效（通道级拥堵）。最讽刺的原因：评测脚本与评测员（ZCode 会话）共用同一条 glm 通道——裁判下场参赛，把自己挤出局。</p></div>
 
-<h2>五、评分表</h2>
+<h2>四、评分表</h2>
 <table>
   <tr><th>模型</th><th>机械结构</th><th>鹈鹕特征</th><th>「骑」的动作</th><th>一句话点评</th></tr>
-  <tr><td>qwen-image-2.0-pro</td><td>★★★★★</td><td>★★★★★（+小皮鞋）</td><td>✅ 端坐踩踏</td><td>题意理解天花板</td></tr>
-  <tr><td>wan2.7-image-pro</td><td>★★★★☆</td><td>★★★★★</td><td>❌ 站着摆拍</td><td>美术第一，题意跑偏</td></tr>
   <tr><td>qwen3.7-plus</td><td>★★★★★</td><td>★★★★☆</td><td>⚠️ 脚没踩实</td><td>SVG 机械结构最严谨</td></tr>
   <tr><td>deepseek-v4-pro</td><td>★★★★☆</td><td>★★★★★（喉囊褶皱）</td><td>✅ 双腿双踏板</td><td>细节狂魔</td></tr>
   <tr><td>deepseek-v4-flash-0731</td><td>★★★★☆</td><td>★★★★☆（+挡泥板+腮红）</td><td>✅ 双腿双踏板</td><td>小而全，会卖萌</td></tr>
   <tr><td>qwen3.6-flash</td><td>★★★☆☆</td><td>★★★★☆</td><td>✅ 腿在踏板上</td><td>粗描边卡通，风格自洽</td></tr>
   <tr><td>glm-4.7-flash</td><td>★☆☆☆☆</td><td>★★☆☆☆</td><td>❌ 腿悬空</td><td>交了卷，但没完全会</td></tr>
   <tr><td>ZCode 手绘动态版</td><td>★★★★★</td><td>★★★★☆</td><td>✅ 动态蹬踏中</td><td>评测员亲自下场</td></tr>
+  <tr><td>qwen-image-2.0-pro</td><td>★★★★★</td><td>★★★★★（+小皮鞋）</td><td>✅ 端坐踩踏</td><td>题意理解天花板</td></tr>
+  <tr><td>wan2.7-image-pro</td><td>★★★★☆</td><td>★★★★★</td><td>❌ 站着摆拍</td><td>美术第一，题意跑偏</td></tr>
   <tr><td>glm-5.3 / glm-5.3-flash</td><td colspan="4">— 429 弃考 —</td></tr>
 </table>
 
