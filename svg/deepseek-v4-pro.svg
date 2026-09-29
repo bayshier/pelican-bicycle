@@ -11,6 +11,7 @@
   <rect x="0" y="520" width="800" height="80" fill="#e0e0e0" />
   <rect x="0" y="520" width="800" height="10" fill="#c0c0c0" />
 
+  <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 2.5; 0 0" dur="0.9s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
   <!-- 运动线与灰尘 -->
   <path d="M 120 440 L 80 440 M 130 420 L 100 400 M 130 460 L 100 480" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 6" opacity="0.5" />
   <path d="M 660 440 L 700 440 M 650 420 L 680 400 M 650 460 L 680 480" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 6" opacity="0.5" />
@@ -29,7 +30,7 @@
   <path d="M 340 400 L 320 420 M 340 400 L 340 425 M 340 400 L 355 420" fill="none" stroke="#e76f51" stroke-width="8" stroke-linecap="round" />
 
   <!-- 自行车 - 后轮 -->
-  <g transform="translate(200, 440)">
+  <g transform="translate(200, 440)"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2s" additive="sum" repeatCount="indefinite"/>
     <circle cx="0" cy="0" r="70" fill="none" stroke="#1d3557" stroke-width="12" />
     <circle cx="0" cy="0" r="64" fill="none" stroke="#ccc" stroke-width="2" />
     <line x1="0" y1="-64" x2="0" y2="64" stroke="#999" stroke-width="2" />
@@ -42,7 +43,7 @@
   </g>
 
   <!-- 自行车 - 前轮 -->
-  <g transform="translate(580, 440)">
+  <g transform="translate(580, 440)"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2s" additive="sum" repeatCount="indefinite"/>
     <circle cx="0" cy="0" r="70" fill="none" stroke="#1d3557" stroke-width="12" />
     <circle cx="0" cy="0" r="64" fill="none" stroke="#ccc" stroke-width="2" />
     <line x1="0" y1="-64" x2="0" y2="64" stroke="#999" stroke-width="2" />
@@ -55,12 +56,13 @@
   </g>
 
   <!-- 链条 -->
-  <path d="M 200 420 L 380 400 M 200 460 L 380 480" stroke="#555" stroke-width="4" stroke-dasharray="6 4" />
+  <path d="M 200 420 L 380 400 M 200 460 L 380 480" stroke="#555" stroke-width="4" stroke-dasharray="6 4"><animate attributeName="stroke-dashoffset" from="0" to="-20" dur="0.5s" repeatCount="indefinite"/></path>
 
   <!-- 牙盘与曲柄 -->
   <circle cx="380" cy="440" r="40" fill="none" stroke="#333" stroke-width="8" />
   <circle cx="380" cy="440" r="30" fill="none" stroke="#666" stroke-width="4" />
   
+  <g><animateTransform attributeName="transform" type="rotate" from="0 380 440" to="360 380 440" dur="2s" repeatCount="indefinite"/>
   <!-- 后曲柄与踏板 -->
   <line x1="380" y1="440" x2="340" y2="400" stroke="#333" stroke-width="12" stroke-linecap="round" />
   <g transform="translate(340, 400) rotate(-45)">
@@ -73,6 +75,7 @@
   <g transform="translate(420, 480) rotate(-45)">
     <rect x="-25" y="-10" width="50" height="20" rx="6" fill="#333" />
     <rect x="-20" y="-6" width="40" height="12" fill="#666" />
+  </g>
   </g>
 
   <circle cx="380" cy="440" r="10" fill="#fff" stroke="#333" stroke-width="6" />
@@ -128,4 +131,5 @@
   <!-- 左翼羽毛细节 -->
   <path d="M 340 220 L 410 250 M 370 230 L 440 265 M 400 240 L 470 275 M 430 250 L 500 280" fill="none" stroke="#555" stroke-width="5" stroke-linecap="round" />
 
+  </g>
 </svg>

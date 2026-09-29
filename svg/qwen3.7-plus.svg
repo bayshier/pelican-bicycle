@@ -3,10 +3,11 @@
   <rect x="0" y="373" width="500" height="27" fill="#8B7355"/>
   <line x1="0" y1="375" x2="500" y2="375" stroke="#6B5335" stroke-width="2"/>
 
+  <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 2.5; 0 0" dur="0.9s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
   <!-- REAR WHEEL -->
   <circle cx="140" cy="320" r="55" fill="none" stroke="#444" stroke-width="5"/>
   <circle cx="140" cy="320" r="6" fill="#555"/>
-  <g stroke="#999" stroke-width="1">
+  <g stroke="#999" stroke-width="1"><animateTransform attributeName="transform" type="rotate" from="0 140 320" to="360 140 320" dur="2s" repeatCount="indefinite"/>
     <line x1="140" y1="268" x2="140" y2="372"/>
     <line x1="88" y1="320" x2="192" y2="320"/>
     <line x1="101" y1="281" x2="179" y2="359"/>
@@ -20,7 +21,7 @@
   <!-- FRONT WHEEL -->
   <circle cx="360" cy="320" r="55" fill="none" stroke="#444" stroke-width="5"/>
   <circle cx="360" cy="320" r="6" fill="#555"/>
-  <g stroke="#999" stroke-width="1">
+  <g stroke="#999" stroke-width="1"><animateTransform attributeName="transform" type="rotate" from="0 360 320" to="360 360 320" dur="2s" repeatCount="indefinite"/>
     <line x1="360" y1="268" x2="360" y2="372"/>
     <line x1="308" y1="320" x2="412" y2="320"/>
     <line x1="321" y1="281" x2="399" y2="359"/>
@@ -58,14 +59,16 @@
   <circle cx="210" cy="300" r="8" fill="#666"/>
 
   <!-- Chain -->
-  <path d="M196,300 Q170,318 140,322" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="3,2"/>
-  <path d="M224,300 Q180,325 140,318" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="3,2"/>
+  <path d="M196,300 Q170,318 140,322" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="3,2"><animate attributeName="stroke-dashoffset" from="0" to="-10" dur="0.5s" repeatCount="indefinite"/></path>
+  <path d="M224,300 Q180,325 140,318" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="3,2"><animate attributeName="stroke-dashoffset" from="0" to="-10" dur="0.5s" repeatCount="indefinite"/></path>
 
   <!-- Crank arms and pedals -->
+  <g><animateTransform attributeName="transform" type="rotate" from="0 210 300" to="360 210 300" dur="2s" repeatCount="indefinite"/>
   <line x1="210" y1="300" x2="195" y2="320" stroke="#555" stroke-width="4" stroke-linecap="round"/>
   <rect x="186" y="318" width="16" height="5" rx="2" fill="#444"/>
   <line x1="210" y1="300" x2="225" y2="280" stroke="#555" stroke-width="4" stroke-linecap="round"/>
   <rect x="218" y="277" width="16" height="5" rx="2" fill="#444"/>
+  </g>
 
   <!-- ===== PELICAN ===== -->
 
@@ -124,4 +127,5 @@
 
   <!-- Smile line -->
   <path d="M320,88 Q325,92 320,95" fill="none" stroke="#d08020" stroke-width="1"/>
+</g>
 </svg>

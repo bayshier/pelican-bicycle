@@ -32,6 +32,7 @@
   <!-- Ground Line -->
   <line x1="0" y1="540" x2="800" y2="540" stroke="#000" stroke-width="8" />
 
+  <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 2.5; 0 0" dur="0.9s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
   <!-- BICYCLE -->
   <g id="bicycle">
     <!-- Back Wheel -->
@@ -39,20 +40,24 @@
     <circle cx="250" cy="450" r="75" fill="none" stroke="#CCC" stroke-width="8"/>
     <circle cx="250" cy="450" r="10" fill="#000"/>
     <!-- Spokes Back -->
+    <g><animateTransform attributeName="transform" type="rotate" from="0 250 450" to="360 250 450" dur="2s" repeatCount="indefinite"/>
     <line x1="250" y1="360" x2="250" y2="540" stroke="#000" stroke-width="6"/>
     <line x1="160" y1="450" x2="340" y2="450" stroke="#000" stroke-width="6"/>
     <line x1="186" y1="386" x2="314" y2="514" stroke="#000" stroke-width="6"/>
     <line x1="186" y1="514" x2="314" y2="386" stroke="#000" stroke-width="6"/>
+    </g>
 
     <!-- Front Wheel -->
     <circle cx="550" cy="450" r="90" fill="none" stroke="#000" stroke-width="16"/>
     <circle cx="550" cy="450" r="75" fill="none" stroke="#CCC" stroke-width="8"/>
     <circle cx="550" cy="450" r="10" fill="#000"/>
     <!-- Spokes Front -->
+    <g><animateTransform attributeName="transform" type="rotate" from="0 550 450" to="360 550 450" dur="2s" repeatCount="indefinite"/>
     <line x1="550" y1="360" x2="550" y2="540" stroke="#000" stroke-width="6"/>
     <line x1="460" y1="450" x2="640" y2="450" stroke="#000" stroke-width="6"/>
     <line x1="486" y1="386" x2="614" y2="514" stroke="#000" stroke-width="6"/>
     <line x1="486" y1="514" x2="614" y2="386" stroke="#000" stroke-width="6"/>
+    </g>
 
     <!-- Bicycle Frame (Bright Red) -->
     <path d="M 250 450 L 350 250 L 400 450 L 550 450" fill="none" stroke="#FF3B30" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
@@ -69,10 +74,12 @@
 
     <!-- Pedals & Cranks -->
     <circle cx="400" cy="450" r="20" fill="#000"/>
+    <g><animateTransform attributeName="transform" type="rotate" from="0 400 450" to="360 400 450" dur="2s" repeatCount="indefinite"/>
     <line x1="400" y1="450" x2="350" y2="400" stroke="#000" stroke-width="12" stroke-linecap="round"/>
     <line x1="400" y1="450" x2="450" y2="500" stroke="#000" stroke-width="12" stroke-linecap="round"/>
     <rect x="330" y="390" width="40" height="20" rx="5" fill="#000" transform="rotate(-30 350 400)"/>
     <rect x="430" y="490" width="40" height="20" rx="5" fill="#000" transform="rotate(-30 450 500)"/>
+    </g>
   </g>
 
   <!-- PELICAN -->
@@ -121,5 +128,6 @@
     <!-- Front Leg (Right Leg) -->
     <path d="M 400 350 L 450 400 L 450 500" fill="none" stroke="#000" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
     <path d="M 450 400 L 430 430 L 460 430 Z" fill="#FFA500" stroke="#000" stroke-width="8" stroke-linejoin="round"/>
+  </g>
   </g>
 </svg>
